@@ -270,65 +270,6 @@
         margin-top: 15px;
     }
 
-
-
-    /* form */
-    fieldset.contour {
-        margin-left: 10px;
-        border: 3px solid #165787;
-        border-radius: 27px;
-        margin-top: 15px;
-        padding: 20px  20px 20px 20px;
-        overflow: scroll;
-    }
-
-    legend {
-        font-size: 18px;
-        font-family: Arial;
-        font-weight: bold;
-        color: #165787;
-        padding: 5px 10px;
-    }
-    table {
-        width: 100%;
-        font-family: Arial;
-        color:#165787;
-    }
-
-    td.champs {
-        width: 20%;
-        vertical-align: top;
-    }
-
-    tr.tr {
-        margin-bottom: 10px;
-    }
-
-    input, textarea, select {
-        width : 100%;
-        margin: 0;
-
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box; 
-        box-sizing: border-box;
-        
-        background-color: white; 
-        color: black;
-        font-family: Arial;
-        border: 2px solid #165787;
-    }
-
-    td.right {
-        vertical-align: middle;
-        text-align: right;
-    }
-
-    textarea {
-        height: 60px;
-        resize: vertical;
-        min-height: 60px;
-    }
-
     div.pied-de-page {
         background-color: white;
     }
