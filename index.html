@@ -1,0 +1,191 @@
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SELudo</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" type="image/x-icon" href="static/main/images/jeux.jpg">
+    </head>
+
+
+    <body>
+
+        <!--  En tête -->
+        <header class="header">
+            <a href=""><img class="logo" src="static/main/images/logo-avec-texte.png" alt="LOGO"></a>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul class="menu">
+                <li><a class="entete" href="#">Accueil</a></li>
+                <li><a class="entete" href="#Le_concept">Concept</a></li>
+                <li><a class="entete" href="#careers">Horaires</a></li>
+                <li><a class="entete" href="#contac">Jeux</a></li>
+                <li><a class="entete" href="#Nos_abonnements">Abonnements</a></li>
+                <li><a class="entete" href="#Nous_contacter">Contact</a></li>
+            </ul>
+        </header>
+
+        <!-- Contenu -->
+        <div class="contenu bords-arrondis">
+            <!-- Image -->
+            <div class="img" id="div3" >
+                <img class="bords-arrondis" src="static/main/images/jeux.jpg" alt="SEludo - Jeux" style="display: block; object-fit: cover; width: 100%;  margin-left: auto; margin-right: auto; margin-top: 50px; background-color: lightgrey; ">
+
+                <div class="centre back">
+                    <p class="texte-image" >bla bla bla</p>
+                </div>
+            </div>
+
+            <!-- Section 1 - Concept -->
+                <span class="ancre" id="Le_concept"></span>
+                <div class="">
+                    <div class="section bords-arrondis ombre-bleue">
+                        <div class="centre">
+                            <h2 class="centre" style="display: inline-block;">Le Concept</h2>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ab quod officia itaque sint, nisi libero quisquam veniam harum inventore repellat, odit tenetur qui doloremque? Expedita amet reprehenderit dolorum iusto, illo cumque sunt labore exercitationem, et doloremque fuga necessitatibus eveniet cupiditate unde culpa libero. Minus voluptas autem soluta id saepe.</p>
+                    </div>
+                </div>
+
+            <!-- Section 2 – horaires-->
+                <span class="ancre" id="Les_horaires"></span>
+                <div>
+                    <div class="section bords-arrondis ombre-bleue">
+                        <h2 class="centre">Nos horaires</h2>
+                        <table style="width: 100%; margin-top: 18px;">
+
+                            <tr>
+                                <td class="horaires" >
+                                    <p>
+                                    <div style="font-weight: bold; color: var(--color-bleu);">Jeudis</div>
+                                    15-18h<br>
+                                    <br>
+                                    <div style="font-weight: bold; color: var(--color-bleu);">Samedis</div>
+                                    10-12h<br>
+                                    <br>
+                                    <div style="color: var(--color-bleu);">Fermé durant les vacances scolaires</div></p>
+                                </td>
+
+                                <td style="vertical-align: top; padding-left: 10px;">
+                                    <p style="margin-bottom: 5px">Maison Chevalley, rue du Midi 6, 1880 Bex</p>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d689.7389170209141!2d7.0116788!3d46.2511091!3m2!1i1024!2i768!4f13.1!2m1!1sMaison%20Chevalley%2C%20rue%20du%20Midi%206%2C%201880%20Bex!5e0!3m2!1sfr!2sch!4v1623256607727!5m2!1sfr!2sch" width="100%" vertical-align="bottom"  style="border:0; border: solid 2px var(--color-bleu); background-color: lightgray" allowfullscreen="" loading="lazy" class="bords-arrondis"></iframe>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+            <!-- Section 3 – jeux -->
+            <span class="ancre" id="Nos_jeux"></span>
+            <div>
+                <div class="section bords-arrondis ombre-bleue">
+                    <h2 class="centre">Nos jeux</h2>
+                    <p>Nous tenons à jour la liste des jeux que vous pourrez empreinter au SELudo, vous pouvez consulter cette liste en cliquant <a href="{% url 'games:index' %}">ici</a></p>
+                </div>
+            </div>
+            <!-- Section 4 – abonnements -->
+            <span class="ancre" id="Nos_abonnements"></span>
+            <div>
+                <div class="section bords-arrondis ombre-bleue">
+
+                    <h2 class="centre">Nos abonnements</h2>
+
+                    <p style="margin-top: 18px; text-align: justify">bal bla </p>
+
+                    <table style="width: 100%;">
+                        <tr class="tr">
+                            <td class="puces"><p>1</p></td>
+                            <td><p style="margin-left: 10px;">{{texte.abo1}}</p></td>
+                        </tr>
+                        <tr class="tr">
+                            <td class="puces"><p>2</p></td>
+                            <td><p style="margin-left: 10px;">{{texte.abo2}}</p></td>
+                        </tr>
+                        <tr class="tr">
+                            <td class="puces"><p>3</p></td>
+                            <td><p style="margin-left: 10px;">{{texte.abo3}}</p></td>
+                        </tr>
+                    </table>
+
+                    <p style="margin-top: 10px;">pour les profs</p>
+
+                    <table style="width: 100%;">
+                        <tr class="tr">
+                            <td class="puces"><p>4</p></td>
+                            <td><p style="margin-left: 10px;">{{texte.abo4}}</p></td>
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
+        <!-- Section 5 - contact -->
+        <span class="ancre" id="Nous_contacter"></span>
+        <div>
+            <div class="section bords-arrondis ombre-bleue" style="margin-bottom: 0;">
+                <h2 class="centre">Nous contacter</h2>
+                <div class="centre">
+                    <p class="contact">Envie de rejoindre notre équipe de bénévoles ? Contactez-nous !<br>ou alors niquez vos mères</p>
+                </div>
+
+                <div class="centre">
+                    <a href="mailto:seludobex@gmail.com?subject=Contacter%20SELudo"><p class="btn-contact">NOUS CONTACTER</p></a>
+                </div>
+
+
+                    <!-- Formulaire
+                        <form method="GET">
+                            <fieldset class="contour">
+                                <legend>Contact</legend>
+                                <table>
+                                    <tr>
+                                        <td align="right" class="champs">Nom (obligatoire): </td>
+                                        <td class="input"><input type="texte" name="nom" size="25" maxlength="50" placeholder="Nom prénom" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td align="right" class="champs">E-mail (obligatoire):</td>
+                                        <td class="input"><input type="email" name="email" size="25" maxlength="50" placeholder="Adresse mail" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td align="right" class="champs">Objet (obligatoire): </td>
+                                        <td class="input">
+                                            <select name="objet" required style="color: #165787; background-color: none;">
+                                                <option>Réserver un jeu
+                                                <option>Signaler l'état d'un jeu
+                                                <option>Devenir bénévole
+                                                <option>Questions diverses
+                                                <option>Autre
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="right" class="champs">Message (obligatoire): </td>
+                                        <td class="input"><textarea name="message" placeholder="Votre message" required rows="5" cols="30"></textarea></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td align="right" style="height: 40px;"><a href="#"><p class="btn-contact">Soumettre</p></a></td>
+                                    </tr>
+                                </table>
+                            </fieldset>
+                            <input type="hidden" name="_captcha" value="false">
+                        </form>-->
+
+                    <p class="rs">{{texte.texte_du_bas_section5}}</p>
+
+                <div class="centre">
+                    <a href="https://www.facebook.com/groups/1998087810339686/" target="blank"><img style="background-color: white;" class="insta" src="static/main/images/facebook.png" onmouseover="this.src='static/main/images/facebook-bis.png'" onmouseout="this.src='static/main/images/facebook.png'"></a>
+                    <a href="https://www.instagram.com/seludo.bex/" target="blank"><img style="background-color: white;" class="insta" src="static/main/images/insta.png" onmouseover="this.src='static/main/images/insta-bis.png'" onmouseout="this.src='static/main/images/insta.png'"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+        <a href="{% url 'admin:index' %}" style="margin-left: 50px; margin-bottom: 50px; color: var(--vert-clair-fond); text-decoration: none;">Bouton pour Admin</a>
+        <!-- Pied de page -->
+
+        <div class="pied-de-page centre">
+            <!--<img class="pied-de-page-img" src="static/main/images/sponsors.jpg" style="max-width: 800px; display: inline-block; background-color: lightgray;">-->
+            <p class="copyright">©Copyright SELudo Bex. Touts droits reservés.</p>
+        </div>
+    </body>
+</html>
