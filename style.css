@@ -9,7 +9,7 @@
 
 /* ALL */
 body {
-    background-color: black;
+    background-color: var(--vert-clair-fond);
     margin: 0;
     font-family: Arial;
     overflow-x: hidden;
@@ -50,7 +50,7 @@ p {
 
 /* HEADER */
 a.entete {
-    color: var(--textes-header-items);
+    color: black);
 }
 
 /* header */
